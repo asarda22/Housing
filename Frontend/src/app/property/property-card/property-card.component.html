@@ -1,9 +1,10 @@
     <div class="card">
         <div class="img-wrapper">
-          <img src="assets/images/house_default.jpg" class="card-img-top" alt="House image" >
+          <img *ngIf="property.Image" src="assets/images/{{property.Image}}.jpg" class="card-img-top" alt="House image" >
+          <img *ngIf="!property.Image" src="assets/images/house_default.jpg" class="card-img-top" alt="House image" >
           <ul class="list-inline text-center member-icons">
             <li class="list-inline-item">
-              <button class="btn btn-primary">Edit</button>
+              <button class="btn btn-primary" routerLink="/property-detail/{{property.Id}}">Details</button>
             </li>
             <li class="list-inline-item">
               <button class="btn btn-primary">Contact</button>
