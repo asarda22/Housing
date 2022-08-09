@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { UsersService } from '../../services/users.service';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-user-register',
@@ -9,16 +11,22 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class UserRegisterComponent implements OnInit {
 
   registrationForm: FormGroup;
-  constructor() { }
+  user: User;
+  isUserFormSubmitted: boolean ;
+  constructor(private fb: FormBuilder, private userService: UsersService) { }
 
   ngOnInit() {
-    this.registrationForm = new FormGroup({
-      userName : new FormControl('', Validators.required),
-      email : new FormControl(null, [Validators.required, Validators.email]),
-      password : new FormControl(null, [Validators.required, Validators.minLength(8)]),
-      confirmPassword : new FormControl(null, [Validators.required]),
-      phone : new FormControl(null, [Validators.required])
-    }, this.passwordMatch);
+    this.createRegistrationForm();
+  }
+
+  createRegistrationForm() {
+    this.registrationForm = this.fb.group({
+      userName : [null, Validators.required],
+      email : [null, [Validators.required, Validators.email]],
+      password : [null, [Validators.required, Validators.minLength(8)]],
+      confirmPassword : [null, [Validators.required]],
+      phone : [null, [Validators.required]]
+    }, {validators : this.passwordMatch});
   }
 
   passwordMatch(fg: FormGroup): Validators {
@@ -44,6 +52,23 @@ export class UserRegisterComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.registrationForm);
+    this.isUserFormSubmitted = true;
+    if (this.registrationForm.valid) {
+    // this.user = Object.assign(this.user, this.registrationForm.value);
+    this.userService.addUser(this.userData());
+    this.registrationForm.reset();
+    this.isUserFormSubmitted = false;
+   // console.log(this.registrationForm);
+    }
   }
+
+  userData(): User {
+    return this.user = {
+        userName: this.userName.value,
+        email: this.email.value,
+        password: this.password.value,
+        phone: this.phone.value
+    };
+  }
+
 }
