@@ -8,8 +8,8 @@
     "Price":12000,
     "BuiltArea":1200,
     "Image":"",
-    "Address":"6 Street Golf Course Road Near Bank of America",
-    "City":"Atlanta",
+    "Address":"6 Street Golf Course Road Near Bank of India",
+    "City":"Mumbai",
     "Description":"Well Maintained builder floor available for rent at prime location. # property features- - 5 mins away from metro station - Gated community - 24*7 security. # property includes- - Big rooms (Cross ventilation & proper sunlight) - Drawing and dining area - Washrooms - Balcony - Modular kitchen - Near gym, market, temple and park - Easy commuting to major destination. Feel free to call With Query."
   },
 
@@ -20,11 +20,11 @@
     "PType":"Aparment",
     "RTM": "2",
     "AvailableFrom": "Aug 23, 2022",
-    "Price":5000,
+    "Price":50000,
     "BuiltArea":1200,
     "Image":"",
     "Address":"5 Street",
-    "City":"New York",
+    "City":"New Delhi",
     "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
   },
   {
@@ -46,40 +46,40 @@
     "Id":4,
     "SellRent":1,
     "Name":"Macro Home",
-    "PType":"Duplex",
+    "PType":"Apartment",
     "RTM": "1",
-    "Price":5000,
+    "Price":65000,
     "BuiltArea":1200,
     "Image":"",
     "Address":"15 Street",
-    "City":"Toronto",
+    "City":"Mumbai",
     "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
   },
   {
     "Id":5,
     "SellRent":1,
-    "Name":"Saint Church Villa",
+    "Name":"Sanjay Villa",
     "PType":"House",
     "RTM": "2",
     "AvailableFrom": "Aug 24, 2022",
-    "Price":12000,
+    "Price":120000,
     "BuiltArea":1200,
     "Image":"",
-    "Address":"18 Street",
-    "City":"New York",
+    "Address":"18 M G Road",
+    "City":"Pune",
     "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
   },
 
   {
     "Id":6,
     "SellRent":1,
-    "Name":"",
-    "PType":"Duplex",
+    "Name":"Telly House",
+    "PType":"House",
     "RTM": "1",
-    "Price":5000,
+    "Price":50000,
     "BuiltArea":1200,
-    "Address":"1 Street",
-    "City":"New York",
+    "Address":"1 Main Street",
+    "City":"New Delhi",
     "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
   }
 ]
