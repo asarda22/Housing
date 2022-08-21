@@ -1,44 +1,85 @@
 [
-    {
-      "Id": 1,
-      "Type": "House1",
-      "Price": 12000,
-      "SellRent": 1,
-      "Image": ""
-    },
-    {
-        "Id": 2,
-        "Type": "House2",
-        "Price": 15000,
-        "SellRent": 2,
-        "Image": ""
-    },
-    {
-        "Id": 3,
-        "Type": "House3",
-        "Price": 16000,
-        "SellRent":1,
-        "Image": ""
-    },
-    {
-        "Id": 4,
-        "Type": "House4",
-        "Price": 18000,
-        "SellRent":2,
-        "Image": ""
-    },
-    {
-        "Id": 5,
-        "Type": "House5",
-        "Price": 18000,
-        "SellRent":1,
-        "Image": ""
-    },
-    {
-        "Id":6,
-        "Type": "House6",
-        "Price": 12000,
-        "SellRent":2,
-        "Image": ""
-    }
+  {
+    "Id":1,
+    "SellRent":2,
+    "Name":"Birla House",
+    "PType":"House",
+    "RTM": "1",
+    "Price":12000,
+    "BuiltArea":1200,
+    "Image":"",
+    "Address":"6 Street Golf Course Road Near Bank of America",
+    "City":"Atlanta",
+    "Description":"Well Maintained builder floor available for rent at prime location. # property features- - 5 mins away from metro station - Gated community - 24*7 security. # property includes- - Big rooms (Cross ventilation & proper sunlight) - Drawing and dining area - Washrooms - Balcony - Modular kitchen - Near gym, market, temple and park - Easy commuting to major destination. Feel free to call With Query."
+  },
+
+  {
+    "Id":2,
+    "SellRent":2,
+    "Name":"Erose Flat",
+    "PType":"Aparment",
+    "RTM": "2",
+    "AvailableFrom": "Aug 23, 2022",
+    "Price":5000,
+    "BuiltArea":1200,
+    "Image":"",
+    "Address":"5 Street",
+    "City":"New York",
+    "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
+  },
+  {
+    "Id":3,
+    "SellRent":1,
+    "Name":"Gun Hill",
+    "PType":"House",
+    "RTM": "2",
+    "AvailableFrom": "Aug 23, 2022",
+    "Price":12000,
+    "BuiltArea":1200,
+    "Image":"",
+    "Address":"5 Street",
+    "City":"Canada",
+    "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
+  },
+
+  {
+    "Id":4,
+    "SellRent":1,
+    "Name":"Macro Home",
+    "PType":"Duplex",
+    "RTM": "1",
+    "Price":5000,
+    "BuiltArea":1200,
+    "Image":"",
+    "Address":"15 Street",
+    "City":"Toronto",
+    "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
+  },
+  {
+    "Id":5,
+    "SellRent":1,
+    "Name":"Saint Church Villa",
+    "PType":"House",
+    "RTM": "2",
+    "AvailableFrom": "Aug 24, 2022",
+    "Price":12000,
+    "BuiltArea":1200,
+    "Image":"",
+    "Address":"18 Street",
+    "City":"New York",
+    "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
+  },
+
+  {
+    "Id":6,
+    "SellRent":1,
+    "Name":"",
+    "PType":"Duplex",
+    "RTM": "1",
+    "Price":5000,
+    "BuiltArea":1200,
+    "Address":"1 Street",
+    "City":"New York",
+    "Description":"2 BHK, 2 Bathroom, 1 Car Parking"
+  }
 ]

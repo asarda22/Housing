@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { PropertiesService } from '../../services/properties.service';
 import { error } from 'protractor';
-import { IProperty } from '../IProperty.interface';
+// import { IProperty } from '../IProperty.interface';
+import { IProperty } from 'src/app/models/IProperty';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -24,6 +25,12 @@ export class PropertyListComponent implements OnInit {
     this.propertiesService.getAllProperties(this.SellRent).subscribe(
       data => {
         this.Properties = data;
+        const newProperty = JSON.parse(localStorage.getItem('newProperty'));
+
+        if (newProperty.SellRent === this.SellRent) {
+          this.Properties = [newProperty, ...this.Properties];
+        }
+
       }, err => {
         console.log(err);
       }

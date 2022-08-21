@@ -74,4 +74,9 @@ export class UserRegisterComponent implements OnInit {
     };
   }
 
+  onReset() {
+    this.isUserFormSubmitted = false;
+    this.registrationForm.reset();
+}
+
 }
